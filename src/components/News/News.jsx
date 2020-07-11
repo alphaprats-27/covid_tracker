@@ -19,11 +19,12 @@ const News = ()=>{
     const items = dailyData.map((item) =>
     <Grid item component={Card}   className={styles.card} >
                     <CardContent>
-<h5>{item.title}</h5>
+<h6 >{item.title}</h6>
 
                                   
-<h6>Visit Link:{item.url}</h6>
-<h6>Date of publication:{item.published}</h6>
+<h7 className={styles.para1}>Visit Link:{item.url}</h7>
+<br/>
+<h8 className={styles.para}>Date of publication:{item.published}</h8>
 
                     </CardContent>
 
