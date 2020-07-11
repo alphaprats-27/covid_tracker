@@ -38,7 +38,7 @@ const StyledTableCell = withStyles((theme) => ({
   const useStyles = makeStyles({
     table: {
       margin:0,
-    width:full-width,
+    
     },
 
   });

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.module.css'
-import {Cards,Chart,CountryPicker,State} from './components';
+import {Cards,Chart,CountryPicker,State,News} from './components';
 import {fetchData} from './api';
 import coronaImage from './image.jpg'
 import {Tabs, TabList, Tab, TabPanel} from 'react-tabs'
