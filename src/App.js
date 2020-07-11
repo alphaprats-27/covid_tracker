@@ -52,7 +52,12 @@ state = {
         
         </div>
       </TabPanel>
-     
+      <TabPanel>
+        <div >
+        <News/>
+        
+        </div>
+      </TabPanel>
       </Tabs>
     )
   }
