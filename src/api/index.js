@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const url = 'https://covid19.mathdro.id/api';
 const URL = 'https://api.covidindiatracker.com/state_data.json';
-const newsUrl = 'https://covid19-us-api.herokuapp.com/news';
+const newsUrl = 'http://newsapi.org/v2/everything?q=Apple&from=2020-07-11&sortBy=popularity&apiKey=2eaf5c00093e4d078d8fae3875d3072e';
 
 export const fetchData = async (country) =>{
 
@@ -67,11 +67,12 @@ export const fetchDailyData = async () =>{
     export const fetchNews = async () =>{
 
         try {
-            const {data:{message}} = await axios.get(newsUrl);
-            const modifiedData = message.map((dailyData) =>({
+            const {data:{articles}} = await axios.get(newsUrl);
+            const modifiedData = articles.map((dailyData) =>({
                 title:dailyData.title,
+                description:dailyData.description,
                 url:dailyData.url,
-                published:dailyData.published,
+                published:dailyData.publishedAt,
                 
                 
     

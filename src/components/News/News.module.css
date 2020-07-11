@@ -3,11 +3,18 @@
     background-color: grey;
     border-bottom: 2px solid black !important;
     border-left: 2px solid black !important;
+    border-right: 2px solid black !important;
    
 }
 .para{
     font-size: small;
+    font-weight: lighter;
 }
 .para1{
     font-size: medium;
+    font-weight: lighter;
+    line-height: 0.5;
+}
+.para2{
+    font-size: xx-large;
 }
