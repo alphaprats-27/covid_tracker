@@ -1,0 +1,8 @@
+.list{
+   text-align:center;
+}
+.card {
+    margin: 0 1% !important;
+    border-bottom: 5px solid rgba(0, 0, 255, 0.5);
+   
+    }
