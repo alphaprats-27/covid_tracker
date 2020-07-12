@@ -1,3 +1,5 @@
+## A Covid-19 tracker project that shows number of infected, recovered and deaths globally(acroos all the countries) as well as in India(state-wise)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
