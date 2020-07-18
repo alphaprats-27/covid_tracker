@@ -7,7 +7,23 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
+.button{
+background: red;
+  border-radius: 8px;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-top: 3px;
+}
+.dark{
+  background-color:black;
+}
+.light{
+  background-color: white;
+  ;
+}
 
 .container1 {
   display: flex;
@@ -35,7 +51,7 @@ nav {
   color: #f8f8f8;
 }
 .image {
-  width: max-content;
+
  
   text-align: center;
 }

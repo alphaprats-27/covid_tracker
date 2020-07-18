@@ -51,12 +51,12 @@ const StyledTableCell = withStyles((theme) => ({
   const State = () => {
     const classes = useStyles();
 
-
+    
 
     
-      
+      const[gh,setgh] = useState(1);
         
-
+      const[statee,setstatee] = useState('');
     const [dailyData, setDailyData] = useState([]);
 
     useEffect(()=>{ 
@@ -70,15 +70,26 @@ const StyledTableCell = withStyles((theme) => ({
     },[]);
 
    
+    function handleClick(e) {
+     
+
+     setstatee(e);
+     if(gh===1)
+     setgh(0);
+     else
+      setgh(1);
+    }
     
-    
-    return(
+if(gh===1)
+{
+     return(
+     
         <div className={styles.list}>
           <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>State</StyledTableCell>
+            <StyledTableCell >State</StyledTableCell>
             <StyledTableCell align="right">Confirmed</StyledTableCell>
             <StyledTableCell align="right">Recovered</StyledTableCell>
             <StyledTableCell align="right">Deaths</StyledTableCell>
@@ -88,7 +99,7 @@ const StyledTableCell = withStyles((theme) => ({
         <TableBody>
           {dailyData.map((row) => (
             <StyledTableRow key={row.state}>
-              <StyledTableCell component="th" scope="row">
+              <StyledTableCell component="th" scope="row" onClick={()=>handleClick(row.state)}>
                 {row.state}
               </StyledTableCell>
               <StyledTableCell align="right"><CountUp start={0} end={row.confirmed} duration={2.5} separator=","/></StyledTableCell>
@@ -101,6 +112,27 @@ const StyledTableCell = withStyles((theme) => ({
     </TableContainer>
         </div>
     )
+          
+  }else
+          {
+
+           
+           if(statee==='Andhra Pradesh')
+           {
+            return(
+              <div>
+              <button onClick={()=>handleClick(statee)}>Back</button>
+                <h1>Andhra Pradesh Testing Centres</h1>
+                </div>
+            )}
+           else{
+      return(
+       
+<div>
+<button>Back</button>
+</div>
+
+    )}}
 
 };
 

@@ -1,8 +1,7 @@
 import axios from 'axios';
-
+import datas from './news.json'
 const url = 'https://covid19.mathdro.id/api';
 const URL = 'https://api.covidindiatracker.com/state_data.json';
-const newsUrl = 'http://newsapi.org/v2/everything?q=Apple&from=2020-07-11&sortBy=popularity&apiKey=2eaf5c00093e4d078d8fae3875d3072e';
 
 export const fetchData = async (country) =>{
 
@@ -64,14 +63,18 @@ export const fetchDailyData = async () =>{
     }
 
 
-    export const fetchNews = async () =>{
+    export const fetchNews = () =>{
 
         try {
-            const {data:{articles}} = await axios.get(newsUrl);
-            const modifiedData = articles.map((dailyData) =>({
+          
+           if(datas)
+           {
+            
+            const modifiedData = datas.articles.map((dailyData) =>({
                 title:dailyData.title,
                 description:dailyData.description,
                 url:dailyData.url,
+                urlToImage:dailyData.urlToImage,
                 published:dailyData.publishedAt,
                 
                 
@@ -79,7 +82,8 @@ export const fetchDailyData = async () =>{
             }))
             console.log(modifiedData);
             return modifiedData;
-        } catch (error) {
+        }    
+    }catch (error) {
             
         }
     }

@@ -7,21 +7,25 @@
   
   .card {
     margin: 0 2% !important;
+    
   }
   
   .infected {
-    border-bottom: 5px solid rgba(0, 0, 255, 0.5);
+    border-bottom: 5px solid blue;
     border-top: 5px solid rgba(0, 0, 255, 0.5) ;
+   
   }
   
   .recovered{
-    border-bottom: 5px solid rgba(0, 255, 0, 0.5);
-    border-top:5px solid rgba(0, 255, 0, 0.5)
+    border-bottom: 5px solid yellow;
+    border-top:5px solid yellow;
+   
   }
   
   .deaths{
-    border-bottom: 5px solid rgba(255, 0, 0, 0.5);
-    border-top: 5px solid rgba(255, 0, 0, 0.5);
+    border-bottom: 5px solid red;
+    border-top: 5px solid pink;
+    
   }
   
   @media only screen and (max-width: 770px) {
