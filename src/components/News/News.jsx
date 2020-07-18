@@ -20,7 +20,7 @@ const News = ()=>{
    
     <div className={styles.card}>
   
-    <img src={item.urlToImage} alt="Girl in a jacket" className={cx(styles.float,styles.clearfix)}></img>
+    <img src={item.urlToImage} alt="Loading" className={cx(styles.float,styles.clearfix)}></img>
                     <h7 className={styles.para2}>{item.title}</h7>
                    
 <br/> 

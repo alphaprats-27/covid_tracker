@@ -13,18 +13,21 @@
   .infected {
     border-bottom: 5px solid blue;
     border-top: 5px solid rgba(0, 0, 255, 0.5) ;
+    background-color: rgba(0, 0, 255, 0.4);
    
   }
   
   .recovered{
     border-bottom: 5px solid yellow;
     border-top:5px solid yellow;
+    background-color: rgba(233, 210, 81, 0.4);
    
   }
   
   .deaths{
     border-bottom: 5px solid red;
     border-top: 5px solid pink;
+    background-color: rgba(209, 135, 187, 0.4);
     
   }
   

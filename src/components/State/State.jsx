@@ -120,10 +120,72 @@ if(gh===1)
            if(statee==='Andhra Pradesh')
            {
             return(
-              <div>
+              
+              <div className={styles.body1}>
+              <br/>
               <button onClick={()=>handleClick(statee)}>Back</button>
-                <h1>Andhra Pradesh Testing Centres</h1>
+              
+              <div className={styles.hey}>
+                <h1 className={styles.yo} >Andhra Pradesh Testing Centres</h1>
+                
                 </div>
+               
+              <br/>
+                <div className={styles.row}>
+             <div className={styles.column}>
+                       <div className={styles.card}>
+                            <h4>Govt. Medical College</h4>
+                                           
+                           
+                            <h5>Anathpur</h5>
+                            
+                      </div>
+                      </div>
+                      <div className={styles.column}>
+                      <div className={styles.card}>
+                           <h4>Govt. Medical College</h4>
+                                          
+                          
+                           <h5>Anathpur</h5>
+                     </div>
+                     </div>
+                     <div className={styles.column}>
+                     <div className={styles.card}>
+                          <h4>Govt. Medical College</h4>
+                                         
+                         
+                          <h5>Anathpur</h5>
+                    </div>
+                    </div> <div className={styles.column}>
+                    <div className={styles.card}>
+                         <h4>Govt. Medical College</h4>
+                                        
+                        
+                         <h5>Anathpur</h5>
+                   </div>
+                   </div> <div className={styles.column}>
+                   <div className={styles.card}>
+                        <h4>Govt. Medical College</h4>
+                                       
+                       
+                        <h5>Anathpur</h5>
+                  </div>
+                  </div> <div className={styles.column}>
+                  <div className={styles.card}>
+                       <h4>Govt. Medical College</h4>
+                                      
+                      
+                       <h5>Anathpur</h5>
+                 </div>
+                 </div>
+                      
+                     <div className={styles.he}>
+
+                     </div>  
+    
+                </div>
+                </div>
+                
             )}
            else{
       return(
