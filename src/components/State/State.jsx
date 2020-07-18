@@ -138,44 +138,50 @@ if(gh===1)
                                            
                            
                             <h5>Anathpur</h5>
-                            
+                            <a href="https://goo.gl/maps/T6fBTHgu6Zg3D9gg8" >View Map</a>
                       </div>
                       </div>
                       <div className={styles.column}>
                       <div className={styles.card}>
-                           <h4>Govt. Medical College</h4>
+                           <h4>Guntur Medical College</h4>
                                           
                           
-                           <h5>Anathpur</h5>
+                           <h5>Guntur</h5>
+                           <a href="https://goo.gl/maps/oseUwVswyxiS7f2x9">View Map</a>
                      </div>
                      </div>
                      <div className={styles.column}>
                      <div className={styles.card}>
-                          <h4>Govt. Medical College</h4>
+                          <h4>Sri Venketaswara Institute of Medical Sciences</h4>
                                          
                          
-                          <h5>Anathpur</h5>
+                          <h5>Tirupati</h5>
+                          <a href="https://goo.gl/maps/Rnrbp7SDheF7auAk9" >View Map</a>
+                     
                     </div>
                     </div> <div className={styles.column}>
                     <div className={styles.card}>
-                         <h4>Govt. Medical College</h4>
+                         <h4>Rajiv Gandhi Institute Of Medical Sciences</h4>
                                         
                         
-                         <h5>Anathpur</h5>
+                         <h5>Kadapa</h5>
+                         <a href="https://goo.gl/maps/c4uVVB794pu3z2sV7" >View Map</a>
                    </div>
                    </div> <div className={styles.column}>
                    <div className={styles.card}>
-                        <h4>Govt. Medical College</h4>
+                        <h4>Rangarya Medical College</h4>
                                        
                        
-                        <h5>Anathpur</h5>
+                        <h5>Kakinada</h5>
+                        <a href="https://goo.gl/maps/skg47vGDXFuMwk2SA">View Map</a>
                   </div>
                   </div> <div className={styles.column}>
                   <div className={styles.card}>
-                       <h4>Govt. Medical College</h4>
+                       <h4>Sidhartha Medical College</h4>
                                       
                       
-                       <h5>Anathpur</h5>
+                       <h5>Vijaywad</h5>
+                       <a href="https://goo.gl/maps/G5hz9Upmij7ANuwP8" >View Map</a>
                  </div>
                  </div>
                       
@@ -187,14 +193,137 @@ if(gh===1)
                 </div>
                 
             )}
-           else{
-      return(
-       
-<div>
-<button>Back</button>
-</div>
+           else if(statee==='Bihar')
+          
+           {
+            return(
+              
+              <div className={styles.body1}>
+              <br/>
+              <button onClick={()=>handleClick(statee)}>Back</button>
+              
+              <div className={styles.hey}>
+                <h1 className={styles.yo} >Bihar Testing Centres</h1>
+                
+                </div>
+               
+              <br/>
+                <div className={styles.row}>
+             <div className={styles.column}>
+                       <div className={styles.card}>
+                            <h4>Darbhanga Medical College</h4>
+                                           
+                           
+                            <h5>Darbhanga</h5>
+                            <a href="https://goo.gl/maps/XKonMjkfWeQNxsA98" >View Map</a>
+                      </div>
+                      </div>
+                      <div className={styles.column}>
+                      <div className={styles.card}>
+                           <h4>Indira Gandhi Institute Medical Sciences</h4>
+                                          
+                          
+                           <h5>Patna</h5>
+                           <a href="https://goo.gl/maps/oseUwVswyxiS7f2x9">View Map</a>
+                     </div>
+                     </div>
+                     <div className={styles.column}>
+                     <div className={styles.card}>
+                          <h4>Patna Medical College</h4>
+                                         
+                         
+                          <h5>Patna</h5>
+                          <a href="https://goo.gl/maps/sUET6rjqfYuRL4Fd8" >View Map</a>
+                     
+                    </div>
+                    </div> <div className={styles.column}>
+                    <div className={styles.card}>
+                         <h4>Rajendra Memorial Institute Of Medical Sciences</h4>
+                                        
+                        
+                         <h5>Patna</h5>
+                         <a href="https://goo.gl/maps/PRguXy5Pyzk9hgBH9" >View Map</a>
+                   </div>
+                  </div>
+                      
+                     <div className={styles.he}>
 
-    )}}
+                     </div>  
+    
+                </div>
+                </div>
+                
+            )}
+            else if(statee==='Maharashtra')
+          
+            {
+             return(
+               
+               <div className={styles.body1}>
+               <br/>
+               <button onClick={()=>handleClick(statee)}>Back</button>
+               
+               <div className={styles.hey}>
+                 <h1 className={styles.yo} >Maharshtra Testing Centres</h1>
+                 
+                 </div>
+                
+               <br/>
+                 <div className={styles.row}>
+              <div className={styles.column}>
+                        <div className={styles.card}>
+                             <h4>A.G. Diagnostics Private Limited</h4>
+                                            
+                            
+                             <h5>Nayantara Building, Pune</h5>
+                             <a href="https://goo.gl/maps/HwdqY83eNVtvzsVY7" >View Map</a>
+                       </div>
+                       </div>
+                       <div className={styles.column}>
+                       <div className={styles.card}>
+                            <h4>Govt. Medical College</h4>
+                                           
+                           
+                            <h5>Miraj</h5>
+                            <a href="https://goo.gl/maps/rgQSETD3SVdParwA8" >View Map</a>
+                      </div>
+                      </div>
+                      <div className={styles.column}>
+                      <div className={styles.card}>
+                           <h4>Govt.Medical College</h4>
+                                          
+                          
+                           <h5>Aurangabad</h5>
+                           <a href="https://goo.gl/maps/3joM5DBunEiJMXqs9">View Map</a>
+                      
+                     </div>
+                     </div> <div className={styles.column}>
+                     <div className={styles.card}>
+                          <h4>Indira Gandhi Govt. Medical College</h4>
+                                         
+                         
+                          <h5>Nagpur</h5>
+                          <a href="https://goo.gl/maps/6pqfrdDTDb2MAZ2u8" >View Map</a>
+                    </div>
+                   </div>
+                   <div className={styles.column}>
+                     <div className={styles.card}>
+                          <h4> InfeXn Laboratories Private Limited, A/131</h4>
+                                         
+                         
+                          <h5> Wagle Industrial Estate, Thane</h5>
+                          <a href="https://g.page/Infexn?share" >View Map</a>
+                    </div>
+                   </div>
+                   
+                      <div className={styles.he}>
+ 
+                      </div>  
+     
+                 </div>
+                 </div>
+                 
+             )}}
 
 };
 
