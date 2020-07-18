@@ -1,7 +1,7 @@
 .body1{
   text-align: center !important;
   
-  background: rgb(200, 166, 238) !important;
+ background: rgba(109, 109, 241, 0.5)!important;
   
 }
    @media only screen and (max-width: 770px) {
@@ -13,7 +13,7 @@
 .card2 {
     margin: 0 1% !important;
     border-bottom: 5px solid rgba(0, 0, 255, 0.5);
-   
+    
     }
 
 
